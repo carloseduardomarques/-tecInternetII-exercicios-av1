@@ -1,13 +1,20 @@
-/*
-Faça uma função que recebe dois números e retorne a média
-*/
-function exercicio01(pNumero1,pNUmero2){
+   /*
+   Faça uma função que recebe dois números e retorne a média
+   */
+    function exercicio01(pNumero1,pNUmero2){
     
     media = (pNumero1+pNUmero2)/2;
 
     return console.log(media);
     
     }
+
+    /*    
+    Faça uma função que receba dois valores (AV1 e AV2) e avise o aluno se é necessário fazer a AV3
+    Regra 01: notas de AV1 e AV2 >= 4.0
+    Regra 02: Média >= 6.0
+    Dica: operadores lógicos => && (E) => || (OU)
+    */
 
     function exercicio02(pAv1, pAv2){
 
@@ -32,4 +39,42 @@ function exercicio01(pNumero1,pNUmero2){
         return console.log(resultado);
      
     }
-      
+
+    function exercicio03(pDe, pAte){
+
+        var i = pDe;
+
+     while (i <= pAte) {
+
+        console.log(i);
+
+        i++;         
+      }
+    }
+     
+    function exercicio03(pDe, pAte){
+        
+        var i = pDe; 
+
+        do {
+
+            console.log(i);
+
+            i++;
+            
+        } while (i <= pAte);
+
+
+            }
+    
+    function exercicio03(pDe, pAte){
+        
+         
+        for (var i =pDe; i <= pAte; i++) {
+            
+            console.log(i);
+            
+        }
+
+            }
+              
