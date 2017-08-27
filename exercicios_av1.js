@@ -40,6 +40,13 @@
      
     }
 
+    /*
+    Criar funções para escrever números no console de 1 até determinado valor, utilizando:
+    while
+    do...while
+    for
+    */
+
     function exercicio03(pDe, pAte){
 
         var i = pDe;
@@ -78,3 +85,45 @@
 
             }
               
+
+ /*Criar função para exibir os números divisíveis por X considerando o intervalo de X a Y*/
+
+function exercicio04(x,y){
+
+ console.log("Divisiveis por "+ x + "são =");
+    
+    for (var i = x; i <= y;i++ ){
+        
+        if (i % x == 0){
+            console.log(i);               
+        }
+    }    
+}   
+
+/*Criar função para mostrar o maior e menor valor de um vetor de números*/
+
+/*6542,1235,3215,6251,3215,3225,4583,2151,2356,1325,9965,1230,4458,6352*/
+
+function exercicio05(pVetor){
+
+    var i;
+    var maior = Number.MIN_VALUE;
+        menor = Number.MAX_VALUE;
+    
+    
+    /*Calculando o maior número*/
+    for(i = 0; i < arguments.length; i++) {
+        if (arguments[i] > maior) {
+            maior = arguments[i];
+        }
+    }
+
+    /*Calculando o menor número*/
+    for(i = 0; i < arguments.length; i++) {
+        if (arguments[i] < menor) {
+            menor = arguments[i];
+        }
+    }
+    return console.log("Maior: "+maior +"\nMenor: "+menor);
+}
+    
