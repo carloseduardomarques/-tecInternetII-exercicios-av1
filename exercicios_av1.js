@@ -3,7 +3,7 @@
    */
     function exercicio01(pNumero1,pNUmero2){
     
-    media = (pNumero1+pNUmero2)/2;
+    var media = (pNumero1+pNUmero2)/2;
 
     return console.log(media);
     
@@ -53,37 +53,29 @@
 
      while (i <= pAte) {
 
-        console.log(i);
+        console.log("Usando while" + i);
 
         i++;         
-      }
-    }
-     
-    function exercicio03(pDe, pAte){
-        
+    }        
+            
         var i = pDe; 
 
-        do {
+    do {
 
-            console.log(i);
+            console.log("Usando Do..While" + i);
 
             i++;
             
-        } while (i <= pAte);
-
-
-            }
+    } while (i <= pAte);    
     
-    function exercicio03(pDe, pAte){
-        
          
-        for (var i =pDe; i <= pAte; i++) {
+    for (var i =pDe; i <= pAte; i++) {
             
-            console.log(i);
+            console.log("Usando For" + i);
             
-        }
+    }
 
-            }
+    }          
               
 
  /*Criar função para exibir os números divisíveis por X considerando o intervalo de X a Y*/
@@ -92,7 +84,9 @@ function exercicio04(x,y){
 
  console.log("Divisiveis por "+ x + "são =");
     
-    for (var i = x; i <= y;i++ ){
+    for (var i = x; 
+             i <= y;
+             i++ ){
         
         if (i % x == 0){
             console.log(i);               
@@ -106,24 +100,22 @@ function exercicio04(x,y){
 
 function exercicio05(pVetor){
 
-    var i;
     var maior = Number.MIN_VALUE;
         menor = Number.MAX_VALUE;
     
+    for(var i in arguments){
     
-    /*Calculando o maior número*/
-    for(i = 0; i < arguments.length; i++) {
-        if (arguments[i] > maior) {
+       if (arguments[i] > maior) {
             maior = arguments[i];
         }
-    }
 
-    /*Calculando o menor número*/
-    for(i = 0; i < arguments.length; i++) {
         if (arguments[i] < menor) {
             menor = arguments[i];
         }
-    }
+      
+
+   }
+
     return console.log("Maior: "+maior +"\nMenor: "+menor);
 }
     
