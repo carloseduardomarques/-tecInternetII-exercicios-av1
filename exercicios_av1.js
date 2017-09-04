@@ -1,4 +1,4 @@
-   /*
+﻿   /*
    Faça uma função que recebe dois números e retorne a média
    */
     function exercicio01(pNumero1,pNUmero2){
@@ -6,7 +6,7 @@
     var media = (pNumero1+pNUmero2)/2;
 
     return console.log(media);
-    
+        
     }
 
     /*    
@@ -19,22 +19,17 @@
     function exercicio02(pAv1, pAv2){
 
         var resultado="",
-            media = 0;
+            media = (pAv1+pAv2)/2;;
             
+        if((pAv1 >= 4 && pAv2 >= 4) && media >= 6){          
 
-        if(pAv1 >= 4 && pAv2 >= 4){
-
-            media = (pAv1+pAv2)/2;
-        }
-
-          if(media < 6){
-           
-             resultado = "Deve fazer a AV3. Media realizada: " + media;
+          resultado = "Não deve fazer a AV3. Media realizada: " + media;
 
           }else{
-
-            resultado = "Nao deve fazer a AV3. Media realizada: " + media;
-          }
+          
+          resultado = "Deve fazer a AV3. Media realizada: " + media;
+          
+        }
         
         return console.log(resultado);
      
@@ -75,14 +70,13 @@
             
     }
 
-    }          
-              
+    }                        
 
  /*Criar função para exibir os números divisíveis por X considerando o intervalo de X a Y*/
 
 function exercicio04(x,y){
 
- console.log("Divisiveis por "+ x + "são =");
+ console.log("Divisiveis por "+ x + "são :");
     
     for (var i = x; 
              i <= y;
@@ -118,4 +112,11 @@ function exercicio05(pVetor){
 
     return console.log("Maior: "+maior +"\nMenor: "+menor);
 }
-    
+/**
+ Testes
+ */
+exercicio01(4,5)
+exercicio02(4,3)
+exercicio03(1,10)
+exercicio04(7,50)
+exercicio05(6542,1235,3215,6251,3215,3225,4583,2151,2356,1325,9965,1230,4458,6352)
